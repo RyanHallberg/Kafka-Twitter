@@ -86,11 +86,6 @@ public class TwitterProducer {
         logger.info("End of Application");
     }
 
-    String consumerKey = "XjjG5Ul0UTROnwKgZ8EjOrBzT";
-    String consumerSecret = "0oaXgzaYHPq58e57PQohBTN8cpAJWzJxxwKK4wDK7abe7vK8ut";
-    String token = "1381850256-tvCl38RpWn5qXar3cOPdx7orKmJawo3PCOJVa30";
-    String secret = "av5r9FOnwDAe6KgcI2z0lqV0qzjvMgDdJuPepUxgDa1Q1";
-
     public Client createTwitterClient(BlockingQueue<String> msgQueue) {
 
         // declare the host you want to connect to, the endpoint, and authentication (basic auth or oauth)

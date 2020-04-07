@@ -1,3 +1,6 @@
 ## Project ##
 .idea
 .gradle
+
+## Files ##
+src/main/java/com/github/ryan/kafka/twitter/TwitterApiConfigs.java
