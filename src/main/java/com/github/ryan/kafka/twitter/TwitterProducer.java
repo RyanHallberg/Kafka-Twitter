@@ -21,6 +21,8 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
+import static com.github.ryan.kafka.twitter.TwitterApiConfigs.*;
+
 /**
  * TwitterProducer
  *
@@ -97,7 +99,7 @@ public class TwitterProducer {
         hosebirdEndpoint.trackTerms(terms);
 
         // these secrets should be read from a config file
-        Authentication hosebirdAuth = new OAuth1(consumerKey, consumerSecret, token, secret);
+        Authentication hosebirdAuth = new OAuth1(API_PUBLIC_KEY, API_SECRET_KEY, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
 
         ClientBuilder builder = new ClientBuilder()
                 .name("Hosebird-Client-01") // optional: mainly for the logs
