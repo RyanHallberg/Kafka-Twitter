@@ -1,4 +1,4 @@
-package com.github.ryan.kafka.tutorial2;
+package com.github.ryan.kafka.twitter;
 
 import com.google.common.collect.Lists;
 import com.twitter.hbc.ClientBuilder;
@@ -98,7 +98,7 @@ public class TwitterProducer {
         StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
 
         // optional: set up some followings and track terms
-        List<String> terms = Lists.newArrayList("Eminem");
+        List<String> terms = Lists.newArrayList("Eminem"); // this is the list of terms that when mentioned on twitter get logged in the console
         hosebirdEndpoint.trackTerms(terms);
 
         // these secrets should be read from a config file
